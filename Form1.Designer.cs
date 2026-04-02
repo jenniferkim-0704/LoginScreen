@@ -96,9 +96,9 @@
             lblErrorMsg.ForeColor = Color.Red;
             lblErrorMsg.Location = new Point(51, 263);
             lblErrorMsg.Name = "lblErrorMsg";
-            lblErrorMsg.Size = new Size(272, 20);
+            lblErrorMsg.Size = new Size(287, 20);
             lblErrorMsg.TabIndex = 4;
-            lblErrorMsg.Text = "아이디 혹은 패스워드가 맞지 않습니다.";
+            lblErrorMsg.Text = "아이디 또는 비밀번호가 잘못 되었습니다.";
             lblErrorMsg.Visible = false;
             // 
             // Form1
