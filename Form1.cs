@@ -8,10 +8,9 @@ namespace LoginScreen
         }
 
 
-
         private void txtID_Enter(object sender, EventArgs e)
         {
-            if (txtID.Text == "아이디")
+            if (txtID.Text == "아이디") // 텍스트가 "아이디"인 경우에만 초기화
             {
                 txtID.Text = "";
                 txtID.ForeColor = Color.Black;
@@ -20,7 +19,7 @@ namespace LoginScreen
 
         private void txtID_Leave(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtID.Text))
+            if (string.IsNullOrWhiteSpace(txtID.Text)) // 텍스트가 비어있거나 공백인 경우에만 초기화
             {
                 txtID.Text = "아이디";
                 txtID.ForeColor = Color.Silver;
@@ -29,7 +28,7 @@ namespace LoginScreen
 
         private void txtPW_Enter(object sender, EventArgs e)
         {
-            if (txtPW.Text == "패스워드")
+            if (txtPW.Text == "패스워드") // 텍스트가 "패스워드"인 경우에만 초기화
             {
                 txtPW.Text = "";
                 txtPW.ForeColor = Color.Black;
@@ -39,7 +38,7 @@ namespace LoginScreen
 
         private void txtPW_Leave(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtPW.Text))
+            if (string.IsNullOrWhiteSpace(txtPW.Text)) // 텍스트가 비어있거나 공백인 경우에만 초기화
             {
                 txtPW.UseSystemPasswordChar = false;
                 txtPW.Text = "패스워드";
@@ -56,7 +55,7 @@ namespace LoginScreen
             string inputID = txtID.Text;
             string inputPW = txtPW.Text;
 
-            if(inputID == myID && inputPW == myPW)
+            if(inputID == myID && inputPW == myPW) // 입력된 아이디와 패스워드가 저장된 아이디와 패스워드와 일치하는지 확인
             {
                 MessageBox.Show("로그인 성공!");
             }
