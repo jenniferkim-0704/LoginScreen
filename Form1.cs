@@ -61,7 +61,7 @@ namespace LoginScreen
             }
             else
             {
-                MessageBox.Show("로그인 실패~");
+                MessageBox.Show("로그인 실패~", "로그인", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
