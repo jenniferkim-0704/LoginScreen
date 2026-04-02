@@ -7,7 +7,7 @@
   - C#, .NET Windows Forms, Visual Studio, GitHub
 - 사용한 컨트롤:
   - Label, TextBox, Button
--사용한 기술과 구현한 기능:
+- 사용한 기술과 구현한 기능:
  - TextBox와 Button Label을 적절히 배치하여 로그인 스크린을 구현 및 로그인 기능 구현
  - 패스워드 입력시 내용이 보이지 않게 처리 
  - 아이디와 패스워드가 일치할 때만 로그인 성공 메시지 보여주기
