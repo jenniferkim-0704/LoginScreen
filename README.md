@@ -15,6 +15,8 @@
 - 과제1 코드의 실행 스크린샷
 
 ![과제1 실행화면](img/screenshot-1.png)
+![과제1 실행화면](img/screenshot-1(2).png)
+![과제1 실행화면](img/screenshot-1(3).png)
 
 - 과제 내용
   - 컨트롤 배치와 기본적인 속성 설정
