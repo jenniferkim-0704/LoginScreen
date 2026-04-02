@@ -28,12 +28,85 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            lblAppName = new Label();
+            txtID = new TextBox();
+            txtPW = new TextBox();
+            btnLogin = new Button();
+            SuspendLayout();
+            // 
+            // lblAppName
+            // 
+            lblAppName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lblAppName.AutoSize = true;
+            lblAppName.Font = new Font("Comic Sans MS", 40.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblAppName.Location = new Point(133, 9);
+            lblAppName.Name = "lblAppName";
+            lblAppName.Size = new Size(202, 94);
+            lblAppName.TabIndex = 0;
+            lblAppName.Text = "Login";
+            // 
+            // txtID
+            // 
+            txtID.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            txtID.BackColor = SystemColors.Window;
+            txtID.Font = new Font("맑은 고딕", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            txtID.ForeColor = Color.Silver;
+            txtID.Location = new Point(51, 126);
+            txtID.Name = "txtID";
+            txtID.Size = new Size(382, 51);
+            txtID.TabIndex = 2;
+            txtID.Text = "아이디";
+            txtID.Enter += txtID_Enter;
+            txtID.Leave += txtID_Leave;
+            // 
+            // txtPW
+            // 
+            txtPW.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            txtPW.BackColor = SystemColors.Window;
+            txtPW.Font = new Font("맑은 고딕", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            txtPW.ForeColor = Color.Silver;
+            txtPW.Location = new Point(51, 209);
+            txtPW.Name = "txtPW";
+            txtPW.Size = new Size(382, 51);
+            txtPW.TabIndex = 3;
+            txtPW.Text = "패스워드";
+            txtPW.Enter += txtPW_Enter;
+            txtPW.Leave += txtPW_Leave;
+            // 
+            // btnLogin
+            // 
+            btnLogin.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnLogin.BackColor = Color.FromArgb(128, 255, 255);
+            btnLogin.Font = new Font("한컴산뜻돋움", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLogin.ForeColor = Color.Blue;
+            btnLogin.Location = new Point(133, 297);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(202, 49);
+            btnLogin.TabIndex = 1;
+            btnLogin.Text = "로그인";
+            btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Text = "Form1";
+            ClientSize = new Size(477, 400);
+            Controls.Add(btnLogin);
+            Controls.Add(txtPW);
+            Controls.Add(txtID);
+            Controls.Add(lblAppName);
+            Name = "Form1";
+            Text = "Login Screen";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label lblAppName;
+        private TextBox txtID;
+        private TextBox txtPW;
+        private Button btnLogin;
     }
 }
